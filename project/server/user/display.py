@@ -14,12 +14,11 @@ class displayAPI(MethodView):
 
     def get(self):
         user = User.query.all()
-        d = {}
-        count = 0
+        d = ""
         for column in user:
-            d[count] = str(column.email)
+            d = d+str(column.email)+"\n"+str(count)
+            #d[count] = str(column.email)
             count = count+1
-        i = count+1
         return make_response(d), 201
 
 
