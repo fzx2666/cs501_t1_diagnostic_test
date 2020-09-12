@@ -15,6 +15,7 @@ class displayAPI(MethodView):
     def get(self):
         user = User.query.all()
         d = ""
+        count = 0
         for column in user:
             d = d+str(column.email)+"\n"+str(count)
             #d[count] = str(column.email)
