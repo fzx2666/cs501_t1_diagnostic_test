@@ -22,7 +22,7 @@ COV.start()
 from project.server import app, db, models
 
 
-migrate = Migrate(app, db)
+migrate = Migrate(app, db, directory='migrations')
 manager = Manager(app)
 
 # migrations
