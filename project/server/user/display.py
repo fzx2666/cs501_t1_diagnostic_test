@@ -19,6 +19,7 @@ class displayAPI(MethodView):
         for column in user:
             d[count] = str(column.email)
             count = count+1
+        i = count+1
         return make_response(d), 201
 
 
