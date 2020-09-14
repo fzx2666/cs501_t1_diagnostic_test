@@ -1,1 +1,0 @@
-https://cs501hw1.herokuapp.com/ | https://git.heroku.com/cs501hw1.git
